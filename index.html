@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Menu Assignment</title>
+</head>
+
+<body>
+    <header class="headersection">
+        <div class="logosection">
+            <h1 class="logotext">My Logo</h1>
+        </div>
+        <div class="navmenu" id="myNav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+
+        </div>
+    </header>
+    <main>
+        <h1 class="titletext">Head1</h1>
+        <p class="paratext">This is a text for paragraph.</p>
+        <div style="padding-left:16px">
+            <h2>Responsive Topnav Example</h2>
+            <p>Resize the browser window to see how it works.</p>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNav");
+            if (x.className === "navmenu") {
+                x.className += " responsive";
+            } else {
+                x.className = "navmenu";
+            }
+        }
+    </script>
+</body>
+
+</html>
